@@ -1,14 +1,35 @@
-# Projeto Poções e Soluções
+# Instalação e Execução
 
-Sistema de gestão de alquimia desenvolvido para Anna Merigold.
+## Instalação
 
-## Como executar
+Para instalação das dependências, entre na pasta do projeto e rode os seguintes comandos:
 
-1. **Backend**:
-   - Entre na pasta `backend`: `cd backend`
-   - Instale: `npm install`
-   - Execute: `node server.js`
-2. **Frontend**:
-   - Entre na pasta `frontend`: `cd frontend`
-   - Instale: `npm install`
-   - Execute: `npm run dev`
+```bash
+cd frontend
+npm install
+
+cd ../backend
+npm install
+```
+
+## Execução
+
+Para rodar o projeto, você precisará de **dois terminais abertos simultaneamente**:
+
+### Terminal 1: Backend
+
+A partir da raiz do projeto, execute:
+
+```bash
+cd backend
+node server.js
+```
+
+### Terminal 2: Frontend
+
+Abra uma nova janela de terminal na raiz do projeto e execute:
+
+```bash
+cd frontend
+npm run dev
+```
