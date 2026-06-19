@@ -1,0 +1,56 @@
+:root {
+  --color-bg: #161925;
+  --color-surface: #0e1017;    
+  --color-card-bg: #11141e;
+  --color-border: rgba(35, 57, 91, 0.4);
+  --color-accent: #993955;     
+  --color-text-main: #E8E9EB;
+  --color-text-sub: #C1A5A9;
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image: radial-gradient(circle at 50% 30%, #23395B 0%, var(--color-bg) 70%);
+  background-attachment: fixed;
+  color: var(--color-text-main);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container-fullscreen {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+
+.desktop-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  width: 100%;
+}
+
+.selector-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px dashed var(--color-text-sub);
+  background: transparent;
+  color: var(--color-text-main);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.selector-circle.active {
+  border-style: solid;
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+  box-shadow: 0 0 12px var(--color-accent);
+}
